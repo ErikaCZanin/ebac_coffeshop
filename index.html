@@ -44,23 +44,24 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="contact">
         <div class="container">
             <h2>Contato</h2>
-            <div>
+            <div class="contact-methods">
                 <div>
                     <h3>fale conosco</h3>
                     <form>
-                        <input type="text" placeholder="Seu nome"/>
-                        <input type="email" placeholder="Seu e-mail"/>
+                        <input type="text" placeholder="Seu nome" required/>
+                        <input type="email" placeholder="Seu e-mail" required/>
                         <input type="tel" placeholder="Seu telefone (opcional)"/>
+                        <textarea placeholder="Sua mensagem" required></textarea>
                         <button type="submit">Enviar</button>
                         <button type="reset">Limpar</button>
                     </form>
                 </div>
                 <div>
                     <h3>Nós acompanhe</h3>
-                    <ul>
+                    <ul class="social-link">
                         <li>
                             <a href="#" title="Siga-nos no Instagram">
                                 <img src="./img/instagramlogo.png" alt="Logo do instagram">
@@ -68,12 +69,12 @@
                         </li>
                         <li>
                             <a href="#" title="Siga-nos no Facebook">
-                                <img src="./img/instagramlogo.png" alt="Logo do Facebook">
+                                <img src="./img/facebooklogo.png" alt="Logo do Facebook">
                             </a>
                         </li>
                         <li>
                             <a href="#" title="Visite nosso canal do Youtube">
-                                <img src="./img/instagramlogo.png" alt="Logo do Youtube">
+                                <img src="./img/YouTubeLogo.jpg" alt="Logo do Youtube">
                             </a>
                         </li>
                     </ul>
@@ -87,5 +88,12 @@
             </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <p>
+                &copy; Game Shop - Todos os direitos reservados 2024
+            </p>
+        </div>
+    </footer>
 </body>
 </html>
