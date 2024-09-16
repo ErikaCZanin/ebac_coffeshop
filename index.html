@@ -6,30 +6,33 @@
     <title>Game shop</title>
     <link rel="stylesheet" href="./main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:ital,wdth@0,75..100;1,75..100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:ital,wdth,wght@0,75..100,800;1,75..100,800&family=Playfair+Display:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Game shop</h1>
+            <h1>Café shop</h1>
         <nav>
             <ul>
                 <li>
-                    <a href="*">Sobre a loja</a>
+                    <a href="#about">Sobre a loja</a>
                 </li>
                 <li>
-                    <a href="*">Contato</a>
+                    <a href="#cardapio">Cardápio</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
                 </li>
             </ul>
         </nav>
         </div>
     </header>
-    <section>
+    <section id="about">
         <div class="container">
-                <img class="logoloja" src="./img/lojagame.jpg" alt="Fachada da loja Games Shop"/>
+                <img class="logoloja" src="./img/facc.jpg" alt="Fachada da loja de café"/>
             <div>
-                <h2>Sobre a loja</h2>
+                <h2>Sobre Two Sisters</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae repudiandae cupiditate velit? Fugiat architecto aliquam necessitatibus soluta sit eligendi? Consequuntur maxime tempora sequi, fugiat ad expedita magnam et at.
                 </p>
@@ -37,30 +40,49 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit recusandae repudiandae cupiditate velit? Fugiat architecto aliquam necessitatibus soluta sit eligendi? Consequuntur maxime tempora sequi, fugiat ad expedita magnam et at.
                 </p>
                 <ul class="brands-list">
-                    <li><img src="./img/nintendologo.png" alt="Nintendo"></li>
-                    <li><img src="./img/playstationlogo.png" alt="PlayStation"></li>
-                    <li><img src="./img/xboxlogo.png" alt="XBox"></li>
+                    <li><img src="./img/orfeu.jpeg" alt="marca de cafe orfeu"></li>
+                    <li><img src="./img/bagio.png" alt="marca de café bagio"></li>
+                    <li><img src="./img/starbucks.png" alt="marca de café starbucks"></li>
                 </ul>
             </div>
         </div>
+    </section>
+    <section id="cardapio">
+        <div class="container">
+        <h2>Cardápio</h2>
+        <div class="articles">
+            <article>
+                <img src="./img/ftcafe.png" alt="Foto de cima de um café" />
+                <h3>Cafés</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+            </article>
+            <article>
+                <img src="./img/ftcappucino.png"  alt="Foto de lado de uma cappucino" />
+                <h3>Cappucinos</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+            </article>
+            <article>
+                <img src="./img/frap.jpg"  alt="Foto de lado do frappuciono" />
+                <h3>frappuccino</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consequuntur doloremque totam labore architecto. Corporis adipisci optio placeat quibusdam totam iure veritatis quam, ullam tenetur error? Laborum, modi itaque. Sunt.
+                </p>
+            </article>
+        </div>
+    </div>
     </section>
     <section id="contact">
         <div class="container">
             <h2>Contato</h2>
             <div class="contact-methods">
-                <div>
-                    <h3>fale conosco</h3>
-                    <form>
-                        <input type="text" placeholder="Seu nome" required/>
-                        <input type="email" placeholder="Seu e-mail" required/>
-                        <input type="tel" placeholder="Seu telefone (opcional)"/>
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                        <button type="reset">Limpar</button>
-                    </form>
-                </div>
+        
                 <div>
                     <h3>Nós acompanhe</h3>
+                    <img id="logotime" src="./img/fotodon.jpg" alt="Foto das donas da loja" />
                     <ul class="social-link">
                         <li>
                             <a href="#" title="Siga-nos no Instagram">
@@ -81,9 +103,28 @@
                 </div>
                 <div>
                     <h3>Venha até nós</h3>
-                    <p>
-                        Rua JavaScript.....
-                    </p>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.9604537283264!2d-122.08424948469694!3d37.42206517982561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb24c57e9d58f%3A0xb5f8ab12b9d54b34!2sGoogleplex!5e0!3m2!1spt-BR!2sbr!4v1694701690020!5m2!1spt-BR!2sbr" 
+                            width="400" 
+                            height="250" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade" alt="mapa do endereço da loja">
+                        </iframe>
+                    </div>
+                </div>
+                <div>
+                    <h3>fale conosco</h3>
+                    <form>
+                        <input type="text" placeholder="Seu nome" required/>
+                        <input type="email" placeholder="Seu e-mail" required/>
+                        <input type="tel" placeholder="Seu telefone (opcional)"/>
+                        <textarea placeholder="Sua mensagem" required></textarea>
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -91,7 +132,7 @@
     <footer>
         <div class="container">
             <p>
-                &copy; Game Shop - Todos os direitos reservados 2024
+                &copy; Coffe Shop - Todos os direitos reservados 2024
             </p>
         </div>
     </footer>
